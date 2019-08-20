@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .title {
-            font-weight: bold;
+        p1,
+        p2 {
+            color: red;
         }
     </style>
 </head>
@@ -41,8 +42,12 @@
     </script>
     <h1>Welcome to Login Page</h1>
     <form action="Submission.html" method="GET" onsubmit="return myfunction();">
-        Username:<input type="text" name="Username" id="username"> <br><br> Password:
-        <input type="password" name="Password" id="password" title="Password must contain one capital letter, one small letter, one number and one special character"> <br><br>
+        <b>Username:</b><input type="text" name="Username" id="username"> <br>
+        <p1>Username must contain 6 to 25 characters
+        </p1><br><br> <b>Password:</b>
+        <input type="password" name="Password" id="password" title="Password must contain one capital letter, one small letter, one number and one special character"><br>
+        <p2>Hint: Password must contain one capital letter, one small letter, one number and one special character</p2>
+        <br> <br>
         <input type="submit" value="Login">
     </form>
 </body>
